@@ -15,8 +15,12 @@ function BottomNav () {
         <Link to= '/'>
           <p>HOME</p>
         </Link>
+        <Link to="/about">
         <p>ABOUT</p>
+        </Link>
+        <Link to="/contactUs">
         <p>CONTACT US</p>
+        </Link>
       </div>
       <p className='mt-2 font-rubik text-primary'>+250 7881 2345</p>
       <img src="/logout-icon.png" alt="" className='ml-5 mr-3  hover:cursor-pointer ' onClick={handleLogoutIconClick}/>

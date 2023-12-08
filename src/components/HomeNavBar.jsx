@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../public/images/logo.svg";
+import Logo from "../assets/logo-ecommerce.svg";
 
 const HomeNavbar = () => {
   const navItems = [
@@ -13,8 +13,8 @@ const HomeNavbar = () => {
   ];
   return (
     <nav className='py-2.5 px-20 flex items-center justify-between w-full'>
-      <a href='/' className='flex items-center'>
-        <img src={Logo} className='h-12 sm:h-16' alt='destructors Logo' />
+      <a href='/' className='flex items-center w-[200px]'>
+        <img src={Logo} className='h-[24px] sm:h-16' alt='destructors Logo' />
         <span className='self-center text-xl font-semibold whitespace-nowrap'>
           {/* Destructors */}
         </span>

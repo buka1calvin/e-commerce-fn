@@ -1,4 +1,4 @@
-import logo from "../../assets/Logo (2).svg";
+import logo from "../../assets/logo-ecommerce.svg";
 import SearchField from "../searchIputField/SearchField";
 import totalCartItems from "../../utils/cartUtil";
 import { useSelector, useDispatch } from "react-redux";
@@ -89,8 +89,10 @@ function NavBar() {
         pathname !== "/" ? " gap-[600px] xs:gap-0" : ""
       }`}
     >
-      <div className='w-20'>
+      <div className='w-[200px]'>
+        <Link to="/">
         <img src={logo} alt='log' />
+        </Link>
       </div>
       {pathname === "/" && <SearchField />}
       {info?.data?.role ? (
@@ -156,7 +158,7 @@ function NavBar() {
                     fill='#555555'
                   />
                 </svg>
-                <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#2D719D] text-white text-xs'>
+                <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#d63232] text-white text-xs'>
                   {totalitems}
                 </div>
               </div>
@@ -191,7 +193,7 @@ function NavBar() {
                   strokeLinejoin='round'
                 />
               </svg>
-              <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#2D719D] text-white text-xs'>
+              <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#d63232] text-white text-xs'>
                 {unReadNotification}
               </div>
             </div>
@@ -238,7 +240,7 @@ function NavBar() {
                     fill='black'
                   />
                 </svg>
-                <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#2D719D] text-white text-xs'>
+                <div className=' absolute ml-4 mb-3 border-solid border-2 rounded-full h-5 w-5 flex items-center justify-center bg-[#d63232] text-white text-xs'>
                   {totalwishlistitems}
                 </div>
               </div>

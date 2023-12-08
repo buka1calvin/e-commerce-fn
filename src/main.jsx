@@ -15,12 +15,12 @@ const root = createRoot(container);
 let persistor = persistStore(store);
 
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <ToastContainer />
         <App />
       </PersistGate>
     </Provider>
-  </React.StrictMode>
+  // {/* </React.StrictMode> */}
 );

@@ -6,7 +6,7 @@ import Users from "../public/icons/sidebar/users.svg";
 import Orders from "../public/icons/sidebar/orders.svg";
 import Products from "../public/icons/sidebar/products.svg";
 import Logout from "../public/icons/sidebar/logout.svg";
-import Logo from "../public/images/logo.svg";
+import Logo from "../assets/logo-ecommerce.svg";
 import Sales from "../public/icons/sidebar/sales.svg";
 import Home from "../public/icons/sidebar/home.svg";
 import getUserInfo from "../utils/getUserInfo";

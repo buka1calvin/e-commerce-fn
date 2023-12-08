@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../public/images/logo.svg";
+import Logo from "../assets/logo-ecommerce.svg";
 import Facebook from "../public/icons/socials/facebook.svg";
 import Instagram from "../public/icons/socials/instagram.svg";
 import Twitter from "../public/icons/socials/twitter.svg";
@@ -10,72 +10,85 @@ const Footer = () => {
     "Privacy Policy",
     "Shipping & Delivery",
     "Refund Policy",
-    "Track your order",
+    "Track Your Order",
   ];
   const supportLinks = [
     "Feedback",
-    "Contact us",
-    "Download app",
-    "Terms and conditions",
+    "Contact Us",
+    "Download App",
+    "Terms and Conditions",
   ];
   const socialIcons = [Facebook, Instagram, Twitter, Pinterest];
   const additionalLinks = ["Privacy", "Security", "Terms"];
+
   return (
-    <>
-      <div className='px-24 flex mt-12 justify-between xs:flex-col xs:px-2 font-rubik'>
-        <div className='w-[400px] xs:w-full mb-10'>
-          <a href='/' className='flex items-center mb-3'>
-            <img src={Logo} className='h-10 sm:h-9' alt='destructors Logo' />
+    <footer className="bg-gray-100 py-8">
+      <div className="container m-auto flex items-center justify-between flex-wra">
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8 lg:px-5">
+          <a href="/" className="flex items-center mb-4">
+            <img src={Logo} className="h-10 sm:h-9" alt="Destructors Logo" />
           </a>
-          <p className='mb-2'>
-            Destructor is the a popular Ecommerce site. it is builded at Andela
-            program which is called ATLP to improve trainee exprience.
+          <p className="text-gray-600 mb-4">
+            Elevate your online shopping experience with our premier e-commerce
+            platform. Crafted with precision and expertise, our platform is the
+            result of dedicated efforts during the Andela ATLP program, ensuring
+            a seamless and enhanced journey for our users.
           </p>
-          <ul className='flex'>
+          <ul className="flex">
             {socialIcons.map((icon, index) => (
-              <li key={`footer_xs${index}`}>
-                <a href='#'>
-                  <img src={icon} alt='Social network icon' />
+              <li key={`footer_social_${index}`} className="mr-4">
+                <a href="#">
+                  <img
+                    src={icon}
+                    alt="Social Network Icon"
+                    className="h-6 w-6"
+                  />
                 </a>
               </li>
             ))}
           </ul>
         </div>
-        <div className='mb-10'>
-          <h1 className='mb-3 font-bold text-gray-600'>Help</h1>
-          <ul>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8">
+          <h1 className="text-gray-800 text-lg font-semibold mb-4">Help</h1>
+          <ul className="text-gray-600">
             {helpLinks.map((link) => (
-              <li key={`vsxs${link}`} className='mb-2'>
-                <a href='#'>{link}</a>
+              <li key={`help_link_${link}`} className="mb-2">
+                <a href="#" className="hover:underline">
+                  {link}
+                </a>
               </li>
             ))}
           </ul>
         </div>
-        <div className='mb-10'>
-          <h1 className='mb-3 font-bold text-gray-600'>Supports</h1>
-          <ul>
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-8">
+          <h1 className="text-gray-800 text-lg font-semibold mb-4">Support</h1>
+          <ul className="text-gray-600">
             {supportLinks.map((link) => (
-              <li key={`footer_11212${link}`} className='mb-2'>
-                <a href='#'>{link}</a>
+              <li key={`support_link_${link}`} className="mb-2">
+                <a href="#" className="hover:underline">
+                  {link}
+                </a>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className='px-24 xs:px-2'>
-        <hr className='h-px my-2 bg-gray-200 border-0' />
-      </div>
-      <div className='px-24 xs:p-2 flex justify-between xs:flex-col my-4'>
-        <p>&copy; 2023 Destructors - All rights reserved</p>
-        <ul className='flex gap-4 xs:flex-col xs:mt-2 xs:gap-0'>
+      <hr className="mx-auto w-4/5 border-t border-gray-300 my-6" />
+      <div className="container mx-auto flex justify-between items-center flex-wrap px-4 ">
+        <p className="text-gray-600">
+          &copy; {new Date().getFullYear()} Destructors - All rights reserved
+        </p>
+        <ul className="flex gap-4">
           {additionalLinks.map((link) => (
-            <li key={`footer_0909${link}`}>
-              <a href='#'>{link}</a>
+            <li key={`additional_link_${link}`}>
+              <a href="#" className="text-gray-600 hover:underline">
+                {link}
+              </a>
             </li>
           ))}
         </ul>
       </div>
-    </>
+    </footer>
   );
 };
 

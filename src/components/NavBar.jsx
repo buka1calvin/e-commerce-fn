@@ -1,4 +1,4 @@
-import logo from '../assets/Logo.svg';
+import logo from '../assets/logo-ecommerce.svg';
 import dashboardIcon from '../assets/Vector.svg';
 import salesIcon from '../assets/salesIcon.svg';
 import productIcon from '../assets/productIcon.svg';

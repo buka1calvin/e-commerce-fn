@@ -19,8 +19,6 @@ const Sidebar = ({ children }) => {
   const [activeTab, setActiveTab] = useState(null);
   const [inSmallMode, setInSmallMode] = useState(false);
   const [activeUserRole, setActiveUserRole] = useState(null);
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
   const { showConfirmation, handleLogoutIconClick, renderLogoutConfirmation } =
     setLogout();
   useEffect(() => {

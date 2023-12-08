@@ -85,7 +85,7 @@ function NavBar() {
   };
   return (
     <div
-      className={`flex flex-row justify-around items-center  ${
+      className={`flex flex-row justify-around items-center py-5 ${
         pathname !== "/" ? " gap-[600px] xs:gap-0" : ""
       }`}
     >

@@ -68,7 +68,7 @@ const CreateReview = ({ productId }) => {
         <>
           <p>Add your review</p>
           <br />
-          <form className='border-2 p-4 w-full' onSubmit={handleSubmit}>
+          <form className='border-2 p-4 w-full rounded-md border-[#4557988e]' onSubmit={handleSubmit}>
             <div className='flex items-center mb-4'>
               <h2 className='mr-4'>Rate product</h2>
               <StarRating value={rating} onChange={handleRatingChange} />
